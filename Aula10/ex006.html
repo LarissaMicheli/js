@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Bree+Serif&display=swap');
+
+        div#area{
+            font-family: "Black And White Picture", system-ui;
+            font-size: 50pt;         
+            background: rgb(238, 104, 209);
+            color: black;
+            width: 500px;
+            height: 500px;
+            line-height: 500px;
+            text-align: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id = "area">
+        Interaja...
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            
+            a.innerText = 'Clicou!'
+            a.style.background = '#459EF7'
+        }
+        function entrar(){
+            a.innerText = 'Entrou'
+            a.style.background = '#A545F7'
+        }
+        function sair(){
+            a.innerText = 'Saiu'
+            a.style.background = '#F7454D'
+        }
+
+    </script>
+  
+
+    
+
+   
+</body>
+</html>
